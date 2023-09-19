@@ -1,0 +1,151 @@
+body {
+    font-family: 'Yatra One', cursive;
+}
+
+.container {
+    margin: 0 auto;
+    background-color: #e2dddd;
+}
+.header {
+    padding-top: 10px;
+    height: 60px;
+}
+.form_first {
+    padding: 10px;
+    width: 600px;
+    margin: 0 auto;
+    
+}
+h2, h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+.top {
+    display: inline-flex;
+    flex-direction: column;
+    width: 200px;
+}
+label {
+    text-align: center;
+    display: block;
+}
+.flef_top {
+    display: flex;
+    justify-content: space-between;
+}
+.flex_bottom {
+    display: flex;
+    justify-content: space-between;
+}
+#result {
+    width: 100px;
+    height: 100px;
+    background-color:#734C8F;
+    margin-bottom: 10px;
+    margin: 0 auto;
+    border: 2px solid #734C8F;
+}
+#cssCode {
+    width: 300px;
+    height: 70px;
+    border: 5px solid #734C8F;
+    resize: none;
+}
+.textarea {
+    text-align: center;
+}
+.form_two {
+    padding: 10px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+}
+.form_two label {
+    text-align: left;
+}
+#color {
+    width: 60px;
+    height: 60px;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+#offsetX, #offsetY, #blur, #color, #opacity {
+    width: 100%;
+}
+#cssCodetwo {
+    width: 550px;
+    height: 40px;
+    border: 5px solid #734C8F;
+    margin: 0 auto;
+    resize: none;
+}
+#color1, #color2 {
+    border: none;
+    width: 60px;
+    height: 60px;
+}
+.gradient_flex {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+.gradient_flex-color {
+    display: inline-flex;
+    flex-direction: column;
+}
+.form_three {
+    padding: 10px;
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+#offset_gradient1, #offset_gradient2, #direction {
+    width: 100%;
+}
+.result_gradient {
+    width: 400px;
+    height: 100px;                                                      
+    margin: 0 auto;
+}
+#cssCodethree {
+    width: 550px;
+    height: 40px;
+    border: 5px solid #734C8F;
+    margin: 0 auto;
+    resize: none;
+}
+@media screen and (max-width: 650px) {
+    .form_first, .form_two, .form_three {
+        width: 400px;
+    }
+    .top {
+        width:150px;
+    }
+    #cssCodetwo, #cssCodethree {
+        width: 300px;
+        height: 60px;
+    }
+}
+@media screen and (max-width: 440px) {
+    .form_first, .form_two, .form_three {
+        width: 300px;
+    }
+    .result_gradient {
+        width: 200px;
+    }
+    #cssCode, #cssCodetwo, #cssCodethree {
+        width: 200px;
+        height: 60px;
+    }
+    .top { 
+        width: 120px;
+    }
+} 
+@media screen and (max-width: 330px) {
+    .form_first, .form_two, .form_three {
+        width: 200px;
+    }
+}

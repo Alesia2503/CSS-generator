@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"><title>Генератор</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>css generators</h2>
+        </div>
+        <hr>
+        <form class="form_first">
+            <h2>Dorder-radius generator</h2> 
+            <div class="flef_top">
+                <div class="top">
+                    <label for="top-left">top-left</label>
+                    <input type="range" id="top-left" min="0" max="75" step="1" value="20">
+                </div>
+                <div class="top">
+                    <label for="top-right">top-right</label>
+                    <input type="range" id="top-right" min="0" max="75" step="1" value="15">
+                </div>
+            </div>
+            <div id="result"></div>
+            <div class="flex_bottom">
+                <div class="top">
+                    <label for="bottom-left">bottom-left</label>
+                    <input type="range" id="bottom-left" min="0" max="75" step="1" value="30">
+                </div>
+                <div class="top">
+                    <label for="bottom-right">bottom-right</label>
+                    <input type="range" id="bottom-right" min="0" max="75" step="1" value="0">
+                </div>
+            </div>
+            <div class="textarea">
+                <h3>Результат</h3>
+                <textarea id="cssCode" readonly></textarea>
+            </div>
+        </form>
+        <hr>
+        <form class="form_two">
+            <h2>Text-shadow generator</h2>
+            <h2 id="result1">Test Text</h2>
+            <label for="offsetX">Смещение по оси x</label>
+            <input type="range" id="offsetX" min="-15" max="15" step="1" value="-9">
+    
+            <label for="offsetY">Смещение по оси y</label>
+            <input type="range" id="offsetY" min="-15" max="15" step="1" value="-5">
+    
+            <label for="blur">Размытие</label>
+            <input type="range" id="blur" min="0" max="15" step="1" value="2">
+
+            <label for="color">Цвет</label>
+            <input type="color" id="color" value="#734C8F">
+
+            <label for="opacity">Прозрачность</label>
+            <input type="range" id="opacity" min="0" max="1" step="0.01" value="0.5">
+
+            <h3>Результат</h3>
+            <textarea id="cssCodetwo" readonly></textarea>
+        </form>
+        <hr>
+    
+        <form class="form_three">
+            <h2>Gradient generator</h2>
+            <div class="gradient_flex">
+                <div class="gradient_flex-color">
+                    <label for="color1">Цвет 1</label>
+                    <input type="color" id="color1" value="#ffaaaa">
+                </div>
+                <div class="gradient_flex-color">
+                    <label for="color2">Цвет 2</label>
+                    <input type="color" id="color2" value="#734C8F">
+                </div>
+            </div>
+            <label for="offset_gradient1">Смещение 1-го цвета</label>
+            <input type="range" id="offset_gradient1" min="0" max="100" step="1" value="25">
+
+            <label for="offset_gradient2">Смещение 2-го цвета</label>
+            <input type="range" id="offset_gradient2" min="0" max="100" step="1" value="75">
+
+            <label for="direction">Направление</label>
+            <input type="range" id="direction" min="0" max="360" step="1" value="90">
+
+            <div class="result_gradient"></div>
+            
+            <h3>Результат</h3>
+            <textarea id="cssCodethree" readonly></textarea>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
